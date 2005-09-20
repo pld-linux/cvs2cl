@@ -1,5 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	CVS-log-message-to-ChangeLog conversion script
+Summary(pl):	Skrypt do konwersji commit logów z CVS-u na ChangeLog
 Name:		cvs2cl
 Version:	2.59
 Release:	0.1
@@ -20,6 +21,13 @@ GNU-style ChangeLog for CVS-controlled sources, by running "cvs log"
 and parsing the output. Duplicate log messages get unified in the
 Right Way. If you don't know what any of that means, then you're doing
 fine, just keep on truckin'.
+
+%description -l pl
+cvs2cl to skrypt perlowy, który robi to, czego mo¿na siê po nim
+spodziewaæ: tworzy plik ChangeLog w stylu GNU dla ¼róde³
+przechowywanych w CVS-ie; robi to poprzez wywo³anie "cvs log" i
+przetwarzanie wyj¶cia. Powtórzone commit logi s± ujednolicane we
+W³a¶ciwy Sposób.
 
 %prep
 %setup -q -c -T
