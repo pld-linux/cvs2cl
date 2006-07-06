@@ -3,13 +3,14 @@ Summary:	CVS-log-message-to-ChangeLog conversion script
 Summary(pl):	Skrypt do konwersji commit logów z CVS-u na ChangeLog
 Name:		cvs2cl
 Version:	2.59
-Release:	0.1
+Release:	1
 Epoch:		0
 License:	GPL v2
 Group:		Applications
-Source0:	http://www.red-bean.com/cvs2cl/cvs2cl.pl
+Source0:	http://www.red-bean.com/cvs2cl/%{name}.pl
 # Source0-md5:	2267d1023719f72358d2739e41ca984c
 URL:		http://www.red-bean.com/cvs2cl/
+BuildRequires:	perl-tools-pod
 BuildRequires:	rpm-perlprov
 BuildRequires:	sed >= 4.0
 BuildArch:	noarch
@@ -40,8 +41,9 @@ sed -i -e '1i#!%{__perl} -w' %{name}.pl
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 install %{name}.pl $RPM_BUILD_ROOT%{_bindir}/%{name}
+pod2man %{name}.pl > $RPM_BUILD_ROOT%{_mandir}/man1/%{name}.1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -49,3 +51,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
+%{_mandir}/man1/cvs2cl.1*
