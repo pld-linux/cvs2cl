@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	CVS-log-message-to-ChangeLog conversion script
-Summary(pl.UTF-8):   Skrypt do konwersji commit logów z CVS-u na ChangeLog
+Summary(pl.UTF-8):	Skrypt do konwersji commit logów z CVS-u na ChangeLog
 Name:		cvs2cl
 Version:	2.59
 Release:	1
