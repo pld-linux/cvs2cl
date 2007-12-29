@@ -3,7 +3,7 @@ Summary:	CVS-log-message-to-ChangeLog conversion script
 Summary(pl.UTF-8):	Skrypt do konwersji commit logów z CVS-u na ChangeLog
 Name:		cvs2cl
 Version:	2.59
-Release:	1
+Release:	2
 Epoch:		0
 License:	GPL v2
 Group:		Applications
