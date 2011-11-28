@@ -2,13 +2,13 @@
 Summary:	CVS-log-message-to-ChangeLog conversion script
 Summary(pl.UTF-8):	Skrypt do konwersji commit logów z CVS-u na ChangeLog
 Name:		cvs2cl
-Version:	2.59
-Release:	2
+Version:	2.73
+Release:	1
 Epoch:		0
 License:	GPL v2
 Group:		Applications
 Source0:	http://www.red-bean.com/cvs2cl/%{name}.pl
-# Source0-md5:	2267d1023719f72358d2739e41ca984c
+# Source0-md5:	07ce09415c10753ba262923fde6e0c18
 URL:		http://www.red-bean.com/cvs2cl/
 BuildRequires:	perl-tools-pod
 BuildRequires:	rpm-perlprov
